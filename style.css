@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  /* background-image: url(layout-banner-design-responsive-business-brochure-template-infographic-beautiful-very-186925.jpg);
+    background-repeat: no-repeat; */
+  background-image: linear-gradient(black, white);
+  transform: translate3d(0px, 0px, 0px);
+  /* background-size: cover;
+    background-position: center; */
+}
+.one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 18vmax;
+}
+h1 {
+  font-size: 80px;
+}
+#flex i {
+  background: -webkit-linear-gradient(black, black, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#flex {
+  display: flex;
+  align-items: center;
+}
+span {
+  color: ;
+  text-shadow: 5px 5px black;
+}
+
+.hero {
+  width: 800px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+.launch-time {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border-radius: 10px;
+  border: 1px solid;
+  box-shadow: 10px, 10px, 5px solid black;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
+.launch-time .div {
+  flex-basis: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.launch-time .div p {
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: -14px;
+}
+.launch-time .div span {
+  color: #fff;
+  text-shadow: 2px 2px black;
+}
+.zero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 50px;
+  }
+  .one{
+    padding-top: 13rem;
+  }
+}
+@media (max-width: 569px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 439px) {
+  h1 {
+    font-size: 30px;
+  }
+  .launch-time .div p {
+    font-size: 20px;
+  }
+  .launch-time .div span {
+    font-size: 15px;
+  }
+  .launch-time {
+    padding: 0px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@keyframes example {
+  0% {
+    background-color: gray;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: white;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: gray;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: white;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: gray;
+    left: 0px;
+    top: 0px;
+  }
+}
+@media (max-width: 1167px) {
+  .launch-time{
+    animation-name: none;
+  }
+}
